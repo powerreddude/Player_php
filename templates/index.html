@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <title>Document</title>
+
+  <script src="/lib/jquery-3.6.0.min.js"></script>
+  <script src="/lib/howler.core.min.js"></script>
+  <script src="/js/main.js"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+</head>
+<body>
+  <div id="nav">
+    <a class="material-icons nav" href="/collection.php">library_music</a>
+    <a class="material-icons nav" href="/about.php">info</a>
+  </div>
+  <div id="content">
+
+  </div>
+  <div id="controls">
+    <!-- move back in queue -->
+    <button id="previous" class="material-icons inline-block">skip_previous</button>
+    <!-- toggle playing and change icon -->
+    <button id="toggle-play" class="material-icons inline-block">play_arrow</button>
+    <!-- move forward in queue -->
+    <button id="next" class="material-icons inline-block">skip_next</button>
+
+    <div class="material-icons inline-block" id="volume" tabindex="-1">
+      volume_up
+      <div id="volume-input-box" style="display: none;">
+        <input type="range" name="volume-input" id="volume-input" min="0" max="1" step=".01">
+      </div>
+    </div>
+
+
+    <!-- thumbnail of album -->
+    <img id="thumb-nail" class="thumb-nail-small inline-block" src="" alt="">
+
+    <!-- title of the song -->
+    <div id="title" class="inline-block"></div>
+    <!-- name of artist -->
+    <div id="artist" class="inline-block"></div>    
+  </div>
+  <!-- on click check pos and seek -->
+  <div id="progress"></div>
+</body>
+</html>

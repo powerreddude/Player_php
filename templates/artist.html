@@ -1,0 +1,10 @@
+<div class="albums">
+    {{#albums}}
+    <div class='album'>
+        <div class='nav' href='album.php?artist={{{artist}}}&album={{{name}}}'>
+            <img class='nav thumb-nail' src='music/{{{artist}}}/{{{name}}}/cover.jpg' href='album.php?artist={{{artist}}}&album={{{name}}}' alt='{{name}} cover'><br>
+            <span class="album_title">{{name}}</span>
+        </div>
+    </div>
+    {{/albums}}
+</div>

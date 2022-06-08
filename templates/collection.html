@@ -1,0 +1,15 @@
+<div class="collection-toggles">
+{{#letters}}
+    <b class="pointer inline-block collection-toggle" target="{{letter}}">{{letter}}</b>
+{{/letters}}
+</div>
+
+{{#letters}}
+<ul class="collection-target {{letter}}" style="display: none;">
+    {{#artists}}
+    <li>
+        <div class="nav" href="artist.php?artist={{{name}}}">{{name}}</div>
+    </li>
+    {{/artists}}
+</ul>
+{{/letters}}
