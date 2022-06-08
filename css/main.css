@@ -1,0 +1,146 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 0;
+    margin: 0;
+    background-color: #121416;
+    color: #FBF9EF;
+}
+
+#nav {
+    height: 35px;
+}
+
+#content {
+    /* margin-bottom: 4%; */
+    min-height: calc(100vh - 72px);
+    margin-bottom: 37px;
+    width: 100%;
+}
+
+#controls {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 35px;
+    background-color: #27282A;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+
+
+
+
+#volume {
+    cursor: pointer;
+    user-select: none;
+}
+
+#volume-input-box {
+    transform: rotate(-90deg);
+    transform-origin: left 0;
+    position: absolute;
+    top: 0;
+    background-color: #27282A;
+    padding: 2px 5px 2px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.pointer, .nav {
+    cursor: pointer;
+}
+
+
+.thumb-nail {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.thumb-nail-small {
+    height: 100%;
+    object-fit: cover;
+}
+
+.album_title {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+    background-color: rgb(40, 40, 41, 0.7);
+    border-radius: 0px 5px;
+    padding: 2px;
+    max-width: 75%;
+}
+
+div.albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.album {
+    flex: 0 0 12%;
+    width: 12%;
+    padding-top: 12%;
+    margin: .25%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+}
+
+collection-toggles {
+    overflow: scroll;
+}
+
+button {
+    border: none;
+    background-color: #121416;
+    color: #FBF9EF;
+    border-radius: 45%;
+    padding: 2px;
+}
+
+button:active {
+    border: 2px solid #121416 ;
+    background-color: #27282A;
+    color: #FBF9EF;
+    border-radius: 45%;
+    padding: 0;
+}
+
+.songs {
+    display: flex;
+    flex-direction: row;
+}
+.song-list {
+    width: 50%;
+}
+
+.album-pannel {
+    background-color: #27282A;
+    width: 50%;
+    height: 100%;
+    flex: 0 0 1;
+}
+
+#progress {
+    background-color: #FBF9EF;
+    height: 2px;
+}
