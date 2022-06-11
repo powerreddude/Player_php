@@ -19,7 +19,7 @@ body {
 
 #controls {
     position: fixed;
-    bottom: 0%;
+    bottom: 2px;
     width: 100%;
     height: 35px;
     background-color: #27282A;
@@ -143,4 +143,6 @@ button:active {
 #progress {
     background-color: #FBF9EF;
     height: 2px;
+    position: fixed;
+    bottom: 0;
 }
