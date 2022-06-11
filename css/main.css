@@ -137,7 +137,6 @@ button:active {
     background-color: #27282A;
     width: 50%;
     height: 100%;
-    flex: 0 0 1;
 }
 
 #progress {
@@ -145,4 +144,9 @@ button:active {
     height: 2px;
     position: fixed;
     bottom: 0;
+}
+
+#progress-back {
+    background-color: #27282A;
+    width: 100%;
 }
