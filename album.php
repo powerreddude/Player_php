@@ -18,6 +18,7 @@ $song_dirs = glob("/mnt/music/$artist/$album/*.{mp3,flac}", GLOB_BRACE);
 
 $songs = [];
 
+// TODO: add song lengths
 foreach($song_dirs as $song) {
     $song = basename($song);
 
