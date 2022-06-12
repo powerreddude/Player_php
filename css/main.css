@@ -152,6 +152,9 @@ button:active {
 #progress-back {
     background-color: #27282A;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 2px;
 }
 
 .collection-toggle {
@@ -160,4 +163,13 @@ button:active {
     color: #FBF9EF;
     border-radius: 10px;
     padding: 2px 8px 2px 8px;
+}
+
+@media (min-width:180px) and (max-width:1024px) {
+    div.album {
+        flex: 0 0 90%;
+        width: 90%;
+        padding-top: 90%;
+        margin: 5%;
+    }
 }
