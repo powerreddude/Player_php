@@ -8,6 +8,9 @@ body {
 
 #nav {
     height: 35px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 #content {
@@ -149,4 +152,12 @@ button:active {
 #progress-back {
     background-color: #27282A;
     width: 100%;
+}
+
+.collection-toggle {
+    background-color: #27282A;
+    font-size: large;
+    color: #FBF9EF;
+    border-radius: 10px;
+    padding: 2px 8px 2px 8px;
 }
