@@ -5,7 +5,7 @@
 - Best hosted with [apache](https://www.apache.org)
 
 ---
-##Setup
+## Setup
 1. Clone this project to the web folder of your apache server with php installed ([docker](https://hub.docker.com/r/mattrayner/lamp))
 2. Add this to the config of your server for http and https 
 `Alias "/music" "{path to your music}"`
@@ -13,7 +13,7 @@
 
 ---
 
-##Downloading music
+## Downloading music
 
 The recommended way to download music is with [bandcamp-dl](https://github.com/iheanyi/bandcamp-dl)
 
